@@ -5,13 +5,13 @@ interface Props {
   description: string;
 }
 
-const props = defineProps<Props>();
+const { icon, title, description } = defineProps<Props>();
 </script>
 
 <template>
   <article class="benefit-card">
     <div class="benefit-card__content">
-      <img :src="props.icon" alt="benefit-icon" class="benefit-card__icon" />
+      <img :src="icon" alt="benefit-icon" class="benefit-card__icon" />
       <h3 class="benefit-card__title">
         {{ title }}
       </h3>

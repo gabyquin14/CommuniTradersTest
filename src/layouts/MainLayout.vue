@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import Header from "@/components/TheHeader.vue";
+// import Header from "@/components/TheHeader.vue";
 import Footer from "@/components/TheFooter.vue";
 </script>
 
 <template>
-  <Header />
+  <!-- <Header /> -->
   <div class="main-layout">
     <slot />
   </div>
