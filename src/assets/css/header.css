@@ -1,0 +1,240 @@
+.header {
+  background-color: var(--dark-blue-bg);
+  color: var(--white);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  white-space: nowrap;
+  z-index: 3;
+}
+
+.header__logo {
+  width: 19rem;
+  max-width: 19rem;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  gap: 2rem;
+  position: relative;
+  font-size: 1.3rem;
+}
+
+/*MAIN NAVBAR ON PC */
+.header__first-content-nav {
+  display: none;
+}
+
+.header__main-nav {
+  flex: 2;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+
+.header__first-content-nav ul,
+.header__first-content-nav__link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__second-nav__content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header__second-nav__content ul {
+  gap: 2rem;
+}
+
+.header__second-nav__nav-link a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__second-nav__extra-items {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.extra-items__border {
+  border-top: solid 0.1rem var(--white);
+  border-bottom: solid 0.1rem var(--white);
+  padding: 1rem 0;
+}
+
+/*SECOND NAVBAR ON MOBILE */
+.header__second-nav__container {
+  position: absolute;
+  top: 5rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--dark-blue-bg);
+  font-size: 1.3rem;
+  padding: 2rem 0;
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  transform: translate(-100%, -0.5rem);
+  gap: 2rem;
+}
+
+.header__second-nav__container.show-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0, 0.8rem);
+}
+
+/*HAMBURGER MENU STYLES */
+.header__hamburger-menu {
+  width: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  gap: 0.45rem;
+}
+
+.header__hamburger-menu .line {
+  display: block;
+  height: 3px;
+  width: 100%;
+  border-radius: 10px;
+  background: var(--white);
+}
+
+.header__hamburger-menu .top-line {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.header__hamburger-menu .middle-line {
+  transition: transform 0.2s ease-in-out;
+}
+
+.header__hamburger-menu .bottom-line {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.header__hamburger-menu[aria-expanded="true"] .top-line {
+  transform: rotate(37deg);
+}
+
+.header__hamburger-menu[aria-expanded="true"] .middle-line {
+  transform: scaleY(0);
+}
+
+.header__hamburger-menu[aria-expanded="true"] .bottom-line {
+  transform: rotate(-37deg);
+}
+
+@media screen and (min-width: 580px) {
+  .header__second-nav__container {
+    bottom: unset;
+    right: unset;
+    left: unset;
+    width: 30%;
+    padding: 4rem;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .header__logo {
+    width: 22rem;
+    max-width: 22rem;
+  }
+
+  .header__container {
+    padding: 2rem 3rem;
+    gap: 2rem;
+    font-size: 1.3rem;
+  }
+
+  .header__first-content-nav {
+    flex: 2;
+    display: block;
+  }
+
+  .header__second-nav__extra-items,
+  .header__hamburger-menu {
+    display: none;
+  }
+
+  .header__second-nav__container {
+    position: fixed;
+    top: unset;
+    height: fit-content;
+    background: linear-gradient(180deg,
+        rgba(24, 31, 41, 1) 41%,
+        rgba(24, 31, 41, 0) 100%);
+    font-size: 1.3rem;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+    gap: 2rem;
+    padding: 3rem 0;
+  }
+
+  .header__second-nav__container.show-menu {
+    transform: translate(0, 0rem);
+  }
+
+  .header__second-nav__content {
+    margin: 0 4rem;
+  }
+
+  .header__second-nav__content ul {
+    gap: 2rem;
+    flex-direction: row;
+  }
+
+  .header__second-nav__nav-link a {
+    display: flex;
+    align-items: center;
+    justify-content: unset;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .header__logo {
+    width: 26rem;
+    max-width: 26rem;
+  }
+
+  .header__container {
+    gap: 6rem;
+  }
+
+  .header__first-content-nav ul,
+  .header__first-content-nav__link {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .header__second-nav__container ul {
+    gap: 4rem;
+    font-weight: 300;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__container {
+    gap: 8rem;
+  }
+}

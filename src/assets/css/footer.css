@@ -1,0 +1,270 @@
+.vertical-padding {
+  padding: 2rem 0;
+}
+
+.separator-border {
+  border-bottom: solid 0.1rem var(--border-separator);
+}
+
+.footer {
+  background-color: var(--dark-gray-bg);
+  color: var(--white);
+  box-shadow: inset 1px 38px 34px -24px rgba(0, 0, 0, 0.65);
+}
+
+.footer__content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 6rem 0 0;
+  font-size: 1.3rem;
+}
+
+.footer__actions-container {
+  margin-bottom: 2rem;
+}
+
+.footer__communi-logo {
+  width: 70%;
+  max-width: 30rem;
+  min-width: 20rem;
+  margin: 0 auto 4rem;
+}
+
+.footer__find-us {
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer__find-us__subtitle {
+  font-weight: 300;
+}
+
+.footer__find-us__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer__navigation__img {
+  object-fit: contain;
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer__tradeview-markets p {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/*NEWSLETTER STYLES */
+.footer__subscribe-newsletter {
+  gap: 2rem;
+}
+
+.footer__surfs-up {
+  width: 50%;
+  max-width: 18rem;
+  margin: 2rem auto;
+  order: 2;
+}
+
+.footer__newsletter-slogan p {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  order: 1;
+}
+
+.footer__newsletter-input__container {
+  width: 80%;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto 2rem;
+}
+
+.footer__newsletter-input__container .main-button,
+.footer__newsletter__input {
+  width: 100%;
+}
+
+.footer__newsletter__input {
+  height: 4.7rem;
+  background-color: transparent;
+  border: solid 0.1rem var(--border-separator);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.footer__newsletter__input[type="text"] {
+  padding-left: 1rem;
+}
+
+/*NAVIGATIONS STYLES */
+.main-nav__list {
+  text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  color: var(--footer-nav-subtitle);
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.secondary-nav__container {
+  gap: 2rem;
+}
+
+.secondary-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  border: none;
+  margin: 0;
+}
+
+.secondary-nav__nav-subtitle {
+  color: var(--footer-nav-subtitle);
+  letter-spacing: 0.4rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.secondary-nav__nav-links {
+  gap: 1rem;
+}
+
+.secondary-nav__nav-links ul {
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 500px) {
+  .footer__nav-container {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .footer__newsletter-input__container {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .footer__newsletter-input__container .main-button {
+    width: 17rem;
+  }
+
+  .main-nav {
+    width: fit-content;
+    border: none;
+    margin: 0;
+  }
+
+  .main-nav__list {
+    margin: 0;
+    width: fit-content;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .vertical-padding {
+    padding: 4rem 0;
+  }
+
+  .footer__nav-container {
+    border: none;
+    margin: 0;
+  }
+
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    width: 80%;
+  }
+
+  .footer__communi-logo {
+    width: 60%;
+    margin: 0 0 2rem;
+  }
+
+  .footer__subscribe-newsletter {
+    gap: 2rem;
+    border: solid 0.1rem var(--dark-gray-footer);
+    padding: 2rem;
+    max-width: 70rem;
+  }
+
+  .footer__newsletter-slogan {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .vertical-separator {
+    display: block;
+    width: 0.1rem;
+    height: 5rem;
+    background-color: var(--white);
+    order: 2;
+  }
+
+  .footer__surfs-up {
+    max-width: 16rem;
+    margin: 0;
+    order: 1;
+  }
+
+  .footer__newsletter-slogan p {
+    width: 60%;
+    margin: 0;
+    order: 3;
+  }
+
+  .footer__find-us {
+    order: 3;
+    border: none;
+    align-items: flex-start;
+  }
+
+  .footer__tradeview-markets {
+    order: 2;
+    border: none;
+    padding: 0;
+  }
+
+  .footer__tradeview-markets p {
+    margin: 0;
+  }
+
+  .footer__main-info {
+    gap: 2rem;
+  }
+
+  .main-nav {
+    width: fit-content;
+    padding: 4rem 4rem 0 0;
+  }
+
+  .secondary-nav {
+    width: fit-content;
+    gap: 4rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .footer__content {
+    width: 70%;
+  }
+
+  .footer__subscribe-newsletter {
+    max-width: 90rem;
+  }
+}

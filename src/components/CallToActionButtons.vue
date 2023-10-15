@@ -3,15 +3,15 @@ import AppMainButton from "./AppMainButton.vue";
 </script>
 
 <template>
-  <section class="call-to-action">
-    <div class="call-to-action__options">
+  <section class="call-to-action flex-col">
+    <div class="call-to-action__options flex-col">
       <h3 class="call-to-action__subtitle">
         Free Download for Tradeview Users
       </h3>
       <AppMainButton text="Contact your Broker" type="outlined" />
     </div>
     <div class="separator"></div>
-    <div class="call-to-action__options">
+    <div class="call-to-action__options flex-col">
       <h3 class="call-to-action__subtitle">
         Free Download for Tradeview Users
       </h3>
@@ -22,14 +22,10 @@ import AppMainButton from "./AppMainButton.vue";
 
 <style scoped>
 .call-to-action {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .call-to-action__options {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 2rem;
   max-width: 17rem;

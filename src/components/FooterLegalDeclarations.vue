@@ -2,7 +2,7 @@
 
 <template>
   <section class="legal-declarations">
-    <div style="padding: 2rem 0">
+    <div class="legal-declarations__notice separator-border">
       <h2 class="legal-declarations__title">
         IMPORTANT NOTICE TO CLIENTS REGARDING CRYPTO CURRENCY PROHIBITION.
       </h2>
@@ -20,7 +20,7 @@
         Markets account will result in the immediate liquidation of all open
         positions in your account and the permanent closure of your account.
       </p>
-      <p class="separator-border" style="margin: 0 0 2rem">
+      <p>
         There is a risk of loss in trading foreign currencies and it is not
         suitable for everyone. We are compensated for our services through the
         bid-ask spread. Tradeview is not responsible for any gains or losses on
@@ -160,7 +160,6 @@
 
 <style scoped>
 .separator-border {
-  padding: 2rem 0;
   border-bottom: solid 0.1rem var(--border-separator);
 }
 .legal-declarations {
@@ -168,6 +167,9 @@
   font-size: 1.3rem;
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 2rem;
+}
+.legal-declarations__notice {
   padding-bottom: 2rem;
 }
 .legal-declarations__title {
@@ -185,7 +187,11 @@
   .legal-declarations__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 4rem;
+    padding: 4rem 0;
+  }
+  .legal-declarations__notice {
+    padding: 4rem 0;
   }
   .legal-declarations__title {
     font-size: 1.5rem;

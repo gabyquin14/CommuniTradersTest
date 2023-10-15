@@ -3,37 +3,37 @@ import BenefitsListItems from "@/components/BenefitsListItems.vue";
 
 const befenitsInfo = [
   {
-    icon: "/src/assets/plant.svg",
+    icon: "/src/assets/images/plant.svg",
     title: "Ideal for Beginner Clients",
     description:
       "Increase trading volumes as new traders gain comfort by following successful traders in forex markets and beyond into stocks, options, commodities, and more…",
   },
   {
-    icon: "/src/assets/lock.svg",
+    icon: "/src/assets/images/lock.svg",
     title: "Low Barriers to Entry",
     description:
       "CommuniTraders software is free and clients can start with just a $100 minimum investment.",
   },
   {
-    icon: "/src/assets/magic-wand.svg",
+    icon: "/src/assets/images/magic-wand.svg",
     title: "Simple Interface",
     description:
       "A simple GUI provides needed features and tools but isn’t bogged down by non-core features. This allows clients to get setup quickly and start trading.",
   },
   {
-    icon: "/src/assets/broken-link.svg",
+    icon: "/src/assets/images/broken-link.svg",
     title: "No Long-Term Commitments",
     description:
       "Clients can easily signup to start, change signal providers, or stop the service. There is no long-term lockup.",
   },
   {
-    icon: "/src/assets/security-shield.svg",
+    icon: "/src/assets/images/security-shield.svg",
     title: "Funds Safety",
     description:
       "CommuniTraders benefits from the same strong regulation and banking partners standalone Tradeview clients enjoy along with transparency and negative balance protection.",
   },
   {
-    icon: "/src/assets/certificate.svg",
+    icon: "/src/assets/images/certificate.svg",
     title: "Tradeview Runs CommuniTrader",
     description:
       "You will experience the Tradeview service you know and love, no gimmicks or hidden fees, excellent live customer support, and your dedicated account manager.",

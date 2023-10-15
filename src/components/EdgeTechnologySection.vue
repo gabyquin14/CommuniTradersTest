@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ExternalLink from "../assets/external-link.vue";
+import ExternalLink from "../assets/images/external-link.vue";
 </script>
 
 <template>
@@ -77,7 +77,7 @@ import ExternalLink from "../assets/external-link.vue";
 }
 @media screen and (min-width: 1000px) {
   .edge-tech__trade-interface {
-    width: 30%;
+    width: 40%;
   }
   .edge-tech__info {
     width: 35%;
