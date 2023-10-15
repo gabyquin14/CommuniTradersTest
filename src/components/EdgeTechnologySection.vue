@@ -18,7 +18,7 @@ import ExternalLink from "../assets/external-link.vue";
         >
       </div>
       <img
-        src="@/assets/trade-interface.png"
+        src="https://www.tvmarkets.com/_nuxt/img/land-comm-pc.ec437a0.png"
         alt="trade-interface"
         class="edge-tech__trade-interface"
       />
