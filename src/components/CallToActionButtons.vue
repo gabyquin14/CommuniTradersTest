@@ -35,7 +35,32 @@ import AppMainButton from "./AppMainButton.vue";
   max-width: 17rem;
 }
 .call-to-action__subtitle {
-  font-weight: 400;
+  font-size: 1.3rem;
+  font-weight: 300;
   text-align: center;
+}
+
+@media screen and (min-width: 820px) {
+  .call-to-action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    height: 14rem;
+  }
+  .separator {
+    height: 100%;
+    width: 0.1rem;
+    min-width: 0.1rem;
+    background-color: var(--white);
+  }
+  .call-to-action__options {
+    max-width: unset;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .call-to-action {
+    gap: 10rem;
+  }
 }
 </style>

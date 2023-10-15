@@ -1,7 +1,12 @@
 :root {
-  --white: aliceblue;
+  --white: white;
   --dark-blue-bg: #181F29;
   --accent-red: #FF0000;
   --dark-text: #363636;
+  --light-text: #b4b4b4;
   --dark-gray-bg: #3C3E48;
+  --light-gray-bg: #f2f2f2;
+  --border-separator: #8c8c8c;
+  --extra-light-gray: #C1C3C9;
+  --dark-gray-footer: #4B4D5C;
 }

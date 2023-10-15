@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ExternalLink from "../assets/external-link.vue";
+</script>
 
 <template>
   <section class="edge-tech">
@@ -11,8 +13,9 @@
         </p>
         <a class="edge-tech__link" href="" target="_blank"
           >Quick Guide: CommuniTraders Web User Manual
-          <img src="@/assets/external-link.svg" alt=""
-        /></a>
+          <ExternalLink color="var(--dark-text)" />
+          /></a
+        >
       </div>
       <img
         src="@/assets/trade-interface.png"
@@ -26,11 +29,12 @@
 <style>
 .edge-tech {
   color: var(--dark-text);
-  background-color: var(--white);
+  background-color: var(--light-gray-bg);
 }
 .edge-tech__content {
   width: 90%;
   margin: 0 auto;
+  padding: 8rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,6 +50,7 @@
 }
 .edge-tech__title {
   font-size: 2.2rem;
+  font-weight: 800;
 }
 .edge-tech__description {
   font-size: 1.5rem;
@@ -64,9 +69,18 @@
 @media screen and (min-width: 700px) {
   .edge-tech__content {
     flex-direction: row;
+    padding: 10rem 0;
   }
   .edge-tech__trade-interface {
     width: 50%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .edge-tech__trade-interface {
+    width: 30%;
+  }
+  .edge-tech__info {
+    width: 35%;
   }
 }
 </style>

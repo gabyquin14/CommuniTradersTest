@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { computed } from "vue";
+
 interface Props {
   text: string;
   type: "outlined" | "filled";
@@ -6,17 +8,17 @@ interface Props {
 }
 
 const { text, type, activeColor } = defineProps<Props>();
+
+const styleObject = computed(() => {
+  return {
+    "--color": activeColor || "var(--accent-red)",
+    "--color-hover": activeColor ? activeColor + "aa" : "#ff0000ed",
+  };
+});
 </script>
 
 <template>
-  <button
-    class="main-button"
-    :class="type"
-    :style="{
-      backgroundColor: activeColor,
-      border: 'solid 0.1rem' + activeColor,
-    }"
-  >
+  <button class="main-button" :class="type" :style="styleObject">
     {{ text }}
   </button>
 </template>
@@ -30,10 +32,11 @@ const { text, type, activeColor } = defineProps<Props>();
   transition: 0.3s;
   height: 47px;
   width: 170px;
+  z-index: 2;
 }
 .filled {
-  border: solid 0.1rem var(--accent-red);
-  background-color: var(--accent-red);
+  border: solid 0.1rem var(--color);
+  background-color: var(--color);
   color: var(--white);
 }
 
@@ -41,5 +44,13 @@ const { text, type, activeColor } = defineProps<Props>();
   border: solid 0.1rem var(--white);
   background-color: transparent;
   color: var(--white);
+}
+.filled:hover {
+  background-color: var(--color-hover);
+  border: solid 0.1rem var(--color-hover);
+}
+
+.outlined:hover {
+  background-color: rgba(255, 255, 255, 0.119);
 }
 </style>

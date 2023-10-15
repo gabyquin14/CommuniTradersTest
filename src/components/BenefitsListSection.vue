@@ -62,17 +62,14 @@ const befenitsInfo = [
 .benefits-list {
   grid-gap: 30px;
   display: grid;
-  gap: 30px;
   grid-template-rows: repeat(auto, 1fr);
-  padding-bottom: 10rem;
-  padding-top: 10rem;
+  padding: 5rem 0;
   width: 90%;
   margin: 0 auto;
 }
 @media screen and (min-width: 570px) {
   .benefits-list {
-    padding-bottom: 5rem;
-    padding-top: 5rem;
+    padding: 10em 0;
     grid-template-columns: repeat(2, 1fr);
   }
 }

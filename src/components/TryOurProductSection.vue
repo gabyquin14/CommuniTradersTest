@@ -16,10 +16,12 @@ import CallToActionButtons from "./CallToActionButtons.vue";
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  gap: 6rem;
   padding: 5rem 0;
+  color: var(--white);
 }
 .try-product__title {
   font-size: 2.2rem;
+  font-weight: 800;
 }
 </style>
