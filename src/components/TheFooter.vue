@@ -8,17 +8,19 @@ import AppMainButton from "@/components/AppMainButton.vue";
     <div class="footer__content">
       <section class="footer__main-info flex-col">
         <img
-          class="footer__communi-logo"
+          class="footer__logo"
           src="https://www.tvmarkets.com/_nuxt/img/logo_white.0f9805e.svg"
           alt="Communi-traders"
         />
-        <nav class="footer__find-us flex-col separator-border vertical-padding">
-          <h3 class="footer__find-us__subtitle">Find us on:</h3>
-          <ul class="footer__find-us__navigation">
+        <nav
+          class="footer__social-links flex-col separator-border vertical-padding"
+        >
+          <h3 class="footer__social-links__subtitle">Find us on:</h3>
+          <ul class="footer__social-links__list">
             <li>
               <a href=""
                 ><img
-                  class="footer__navigation__img"
+                  class="footer__social-link__img"
                   src="https://www.tvmarkets.com/_nuxt/img/icon_twitter.f5da6c2.svg"
                   alt="Twitter"
               /></a>
@@ -26,7 +28,7 @@ import AppMainButton from "@/components/AppMainButton.vue";
             <li>
               <a href=""
                 ><img
-                  class="footer__navigation__img"
+                  class="footer__social-link__img"
                   src="../assets/images/facebook.png"
                   alt="Facebook"
               /></a>
@@ -34,7 +36,7 @@ import AppMainButton from "@/components/AppMainButton.vue";
             <li>
               <a href=""
                 ><img
-                  class="footer__navigation__img"
+                  class="footer__social-link__img"
                   src="https://www.tvmarkets.com/_nuxt/img/icon_linkedin.54df89e.svg"
                   alt="Linkedin"
               /></a>
@@ -42,7 +44,7 @@ import AppMainButton from "@/components/AppMainButton.vue";
             <li>
               <a href=""
                 ><img
-                  class="footer__navigation__img"
+                  class="footer__social-link__img"
                   src="https://tvmarkets.com/_nuxt/img/icon_instagram.3be0c20.svg"
                   alt="Instagram"
               /></a>
@@ -50,19 +52,19 @@ import AppMainButton from "@/components/AppMainButton.vue";
             <li>
               <a href=""
                 ><img
-                  class="footer__navigation__img"
+                  class="footer__social-link__img"
                   src="https://www.tvmarkets.com/_nuxt/img/icon_youtube.d7756da.svg"
                   alt="Youtube"
               /></a>
             </li>
           </ul>
         </nav>
-        <div class="footer__tradeview-markets separator-border">
+        <div class="footer__company-info separator-border">
           <p>
             <b>Tradeview Markets</b> | Grand Cayman, KY1-1002, 4th Floor Harbour
             Place | 103 South Church St, PO Box 1105
             <br />
-            <b>Main Oﬃce:</b> +1 345 945 6271
+            <b>Main Office:</b> +1 345 945 6271
             <br />
             <b>Direct Phone:</b> +1 345 946 4532
             <br />
@@ -160,7 +162,7 @@ import AppMainButton from "@/components/AppMainButton.vue";
               <nav class="secondary-nav__nav-links flex-col">
                 <h3 class="secondary-nav__nav-subtitle">SUPPORT</h3>
                 <ul class="flex-col">
-                  <li><a href=""> Forms and Documents </a></li>
+                  <li><a href="">Forms and Documents</a></li>
                   <li><a href="">FAQ</a></li>
                 </ul>
               </nav>

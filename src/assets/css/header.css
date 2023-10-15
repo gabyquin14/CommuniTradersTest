@@ -24,7 +24,7 @@
 }
 
 /*MAIN NAVBAR ON PC */
-.header__first-content-nav {
+.header__primary-nav {
   display: none;
 }
 
@@ -34,8 +34,8 @@
   letter-spacing: 0.3rem;
 }
 
-.header__first-content-nav ul,
-.header__first-content-nav__link {
+.header__primary-nav ul,
+.header__primary-nav__link {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -163,7 +163,7 @@
     font-size: 1.3rem;
   }
 
-  .header__first-content-nav {
+  .header__primary-nav {
     flex: 2;
     display: block;
   }
@@ -186,7 +186,7 @@
     opacity: 1;
     transform: translate(0, 0);
     gap: 2rem;
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
 
   .header__second-nav__container.show-menu {
@@ -208,6 +208,12 @@
     justify-content: unset;
     gap: 1rem;
   }
+
+  .header__primary-nav__language-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -220,8 +226,8 @@
     gap: 6rem;
   }
 
-  .header__first-content-nav ul,
-  .header__first-content-nav__link {
+  .header__primary-nav ul,
+  .header__primary-nav__link {
     display: flex;
     align-items: center;
     gap: 2rem;
