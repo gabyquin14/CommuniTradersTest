@@ -11,7 +11,7 @@ const showMenu = ref(false);
       <img
         class="header__logo"
         style="flex: 1"
-        src="@/assets/logo.svg"
+        src="https://www.tvmarkets.com/_nuxt/img/logo_tradeview_full_dark.4bc1faa.svg"
         alt=""
       />
       <nav class="header__first-content-nav header__main-nav">

@@ -15,7 +15,7 @@ import CallToActionButtons from "./CallToActionButtons.vue";
 
       <div class="hero__content">
         <img
-          src="@/assets/communi-traders-white.svg"
+          src="https://www.tvmarkets.com/_nuxt/img/logo1.caa2e62.svg"
           class="hero__communi-logo"
           alt=""
         />
